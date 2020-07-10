@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-export default function CartTotals({ value }) {
+
+export default function CartTotals({ value, history }) {
     const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
     return (
         <React.Fragment>
